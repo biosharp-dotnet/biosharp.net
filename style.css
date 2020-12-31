@@ -11,7 +11,6 @@ html, body {height: 100%}
 
 p{
     font-size: 26px;
-    color: #bfbfbf;
     /* font-family: 'Libre Baskerville'; */
 }
 p a, p a:focus, p a:hover, p a:visited, p a:active {
@@ -23,22 +22,33 @@ body{
     text-align: center;
     height: 100%;
 }
+#container{
+    position: relative;
+    top: calc(50% - 180px);
+}
 #main-block{
     display: flex;
+    width: 720px;
     margin: auto;
     text-align: left;
     padding-bottom: 10px;
-    /* border-bottom: 2px solid #888; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+#main-block > div{
+    width: 46%
 }
 #logo-container{
-    /* height: 85px;
-    width: 485px; */
-    /* background: url('img/logo_icon.svg') no-repeat center center;
-    background-size: contain; */
+    display: flex;
+}
+#logo-container img{
+    width: 100%;
+    display: block;
+    margin-top: 30px;
 }
 .logo-text{
     font-family: 'Saira';
-    font-size: 96px;
+    font-size: 82px;
 }
 #sm-icons {
     /* border-top: 2px solid #888;
