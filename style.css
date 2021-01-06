@@ -10,7 +10,7 @@ html, body {height: 100%}
 .font-size-18{font-size: 18px}
 
 p{
-    font-size: 22px;
+    font-size: 23.5px;
 }
 p a, p a:focus, p a:hover, p a:visited, p a:active {
     color: #a5a5a5;
@@ -23,11 +23,11 @@ body{
 }
 #container{
     position: relative;
-    top: calc(50% - 140px);
+    top: calc(50% - 110px);
 }
 #main-block{
     display: flex;
-    width: 600px;
+    width: 430px;
     margin: auto;
     text-align: left;
     padding-bottom: 10px;
@@ -35,7 +35,7 @@ body{
     justify-content: space-between;
 }
 #main-block > div{
-    width: 46%
+    width: 45%
 }
 #logo-container{
     display: flex;
@@ -43,12 +43,12 @@ body{
 #logo-container img{
     width: 100%;
     display: block;
-    margin-top: 18px;
+    margin-top: 0px;
 }
 .logo-text{
     font-family: 'Saira';
-    font-size: 70px;
-    line-height: 94px;
+    font-size: 48px;
+    line-height: 48px;
 }
 #sm-icons {
     /* border-top: 2px solid #888;
