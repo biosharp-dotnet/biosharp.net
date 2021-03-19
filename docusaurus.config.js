@@ -13,7 +13,7 @@ module.exports = {
     navbar: {
       title: "Biosharp.net",
       logo: {
-        alt: "My Site Logo",
+        alt: "BioSharp OÜ logo",
         src: "img/logo-sm.svg",
       },
       items: [
@@ -48,15 +48,15 @@ module.exports = {
           items: [
             {
               label: "LinkedIn",
-              href: "FIXME",
+              href: "https://www.linkedin.com/company/biosharp",
             },
             {
               label: "Facebook",
-              href: "FIXME",
+              href: "https://www.facebook.com/BioSharp.net/",
             },
             {
               label: "Twitter",
-              href: "FIXME",
+              href: "https://twitter.com/BioSharp_dotnet",
             },
           ],
         },
@@ -69,7 +69,7 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "FIXME",
+              href: "https://github.com/biosharp-dotnet",
             },
           ],
         },
@@ -83,11 +83,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "FIXME",
+          editUrl: "https://github.com/biosharp-dotnet",
         },
         blog: {
           showReadingTime: true,
-          editUrl: "FIXME",
+          editUrl: "https://github.com/biosharp-dotnet",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

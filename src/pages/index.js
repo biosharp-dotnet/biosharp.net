@@ -6,32 +6,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
-function HomePage() {
-  return (
-    <div>
-      <title>Biosharp</title>
-      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <div id="logo-container">
-        <img src="img/logo_icon.svg" />
-      </div>
-      <div>
-        <div classname="logo-text">biosharp</div>
-        <div id="sm-icons">
-          <a href="https://github.com/biosharp-dotnet" />
-          <img src="img/g_icon.svg" />
-          <a href="https://www.linkedin.com/company/biosharp" />
-          <img src="img/l_icon.svg" />
-          <a href="https://www.youtube.com/channel/UChZX3OqkjS1SuGV_XPLPZ-Q?view_as=subscriber" />
-          <img src="img/y_icon.svg" />
-          <a href="https://www.facebook.com/BioSharp.net/" />
-          <img src="img/f_icon.svg" />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -76,6 +50,13 @@ export default function Home() {
                 href="https://www.facebook.com/BioSharp.net/"
               >
                 Facebook
+              </a>
+
+              <a
+                class="button button--outline button--secondary"
+                href="https://twitter.com/BioSharp_dotnet"
+              >
+                Twitter
               </a>
             </div>
           </div>
