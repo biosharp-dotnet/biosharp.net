@@ -14,7 +14,7 @@ module.exports = {
       title: "Biosharp.net",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo-sm.svg",
       },
       items: [
         {
@@ -74,7 +74,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © 2020 - ${new Date().getFullYear()}, All rights reserved, BioSharp OÜ`,
+      copyright: `Copyright © 2020 - ${new Date().getFullYear()}. All rights reserved, BioSharp OÜ`,
     },
   },
   presets: [
