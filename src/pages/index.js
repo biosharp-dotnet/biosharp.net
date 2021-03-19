@@ -43,7 +43,9 @@ export default function Home() {
       <main>
         <div class="hero shadow--lw">
           <div class="container">
-            <h1 class="hero__title">BioSharp OÜ</h1>
+            <a href="https://company.e-resident.gov.ee/company/16019987">
+              <h1 class="hero__title">BioSharp OÜ</h1>
+            </a>
             <p class="hero__subtitle">
               We make Bioinformatics simple and easy.
             </p>
