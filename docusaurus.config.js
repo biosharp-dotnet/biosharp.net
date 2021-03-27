@@ -74,7 +74,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © 2020 - ${new Date().getFullYear()}. All rights reserved, BioSharp OÜ`,
+      copyright: `Copyright © ${new Date().getFullYear()}. All rights reserved, BioSharp OÜ`,
     },
   },
   presets: [
