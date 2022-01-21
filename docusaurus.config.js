@@ -17,12 +17,12 @@ module.exports = {
         src: "img/logo-sm.svg",
       },
       items: [
-        {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
-        },
+//         {
+//           to: "docs/",
+//           activeBasePath: "docs",
+//           label: "Docs",
+//           position: "left",
+//         },
         { to: "blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/biosharp-dotnet/biosharp.net",
@@ -81,14 +81,14 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
        {
-//         docs: {
-//           sidebarPath: require.resolve("./sidebars.js"),
-//           editUrl: "https://github.com/biosharp-dotnet",
-//         },
-//         blog: {
-//           showReadingTime: true,
-//           editUrl: "https://github.com/biosharp-dotnet",
-//         },
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/biosharp-dotnet",
+        },
+        blog: {
+          showReadingTime: true,
+          editUrl: "https://github.com/biosharp-dotnet",
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
