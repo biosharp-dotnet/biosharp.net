@@ -80,15 +80,15 @@ module.exports = {
   presets: [
     [
       "@docusaurus/preset-classic",
-      {
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/biosharp-dotnet",
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/biosharp-dotnet",
-        },
+//       {
+//         docs: {
+//           sidebarPath: require.resolve("./sidebars.js"),
+//           editUrl: "https://github.com/biosharp-dotnet",
+//         },
+//         blog: {
+//           showReadingTime: true,
+//           editUrl: "https://github.com/biosharp-dotnet",
+//         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
