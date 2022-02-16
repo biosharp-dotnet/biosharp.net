@@ -9,6 +9,20 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "biosharp-dotnet", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
+
+i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+      pt: {
+        htmlLang: 'pt-BR',
+      },
+    },
+  },
+
   themeConfig: {
     navbar: {
       title: "Biosharp.net",
@@ -23,7 +37,14 @@ module.exports = {
 //           label: "Docs",
 //           position: "left",
 //         },
+
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+
         { to: "blog", label: "Blog", position: "left" },
+
         {
           href: "https://github.com/biosharp-dotnet/biosharp.net",
           label: "GitHub",
