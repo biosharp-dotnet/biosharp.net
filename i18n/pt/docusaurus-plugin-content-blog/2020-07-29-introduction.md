@@ -1,6 +1,6 @@
 ---
-slug: introduction
-title: Hello, world!
+slug: introduction-to-biosharp-ou
+title: Olá, Mundo!
 author: Abhinav Sharma
 author_title: An aspiring BioStar.
 author_url: https://github.com/abhi18av

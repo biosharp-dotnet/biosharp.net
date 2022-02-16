@@ -40,7 +40,7 @@ i18n: {
 
         {
           type: 'localeDropdown',
-          position: 'left',
+          position: 'right',
         },
 
         { to: "blog", label: "Blog", position: "left" },
