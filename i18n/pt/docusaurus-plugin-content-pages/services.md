@@ -8,13 +8,12 @@ title: Serviços que oferecemos.
 - Iniciação em linha de comando (Bash/Powershell)
 - Vim
 - VS Code
-- Sublime merge
 - Programação em Bash
 - Programação em Powershell
 - Utilização de Conda
 - Nextflow (conceitos básicos)
 - Nextlow (pipelines públicos)
-- Transferência de dados (R-clone)
+- Transferência de dados (rclone)
 - Git e Github
 
 ## Consultoria em Bioinformática (infraestrutura)

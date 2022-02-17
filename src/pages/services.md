@@ -4,24 +4,23 @@ title: Services we offer.
 
 # Services
 
-## Capacitação em Bioinformática
-- Iniciação em linha de comando (Bash/Powershell)
-- Vim
+## Training in Bioinformatics
+- Command line launch (Bash/Powershell)
+- Vim text editor
 - VS Code
-- Sublime merge
-- Programação em Bash
-- Programação em Powershell
-- Utilização de Conda
-- Nextflow (conceitos básicos)
-- Nextlow (pipelines públicos)
-- Transferência de dados (R-clone)
-- Git e Github
+- Programming in Bash
+- Programming in Powershell
+- Use of Conda
+- Nextflow (basic concepts)
+- Nextlow (public pipelines)
+- Data transfer (rclone)
+- Git and Github
 
-## Consultoria em Bioinformática (infraestrutura)
-- Configuração de sistema
-- Automatização de processos
+## Consulting in Bioinformatics (infrastructure)
+- System configuration
+- Process automation
 
-## Consultoria em Bioinformática (pipelines)
-- Tradução de scripts de bioinformática para pipelines na linguagem reprodutível Nextflow
-- Documentação de pipeline (Procedimento Operacional Padrão - POP)
-- Documentação de pipeline (Website)
+## Consulting in Bioinformatics (pipelines)
+- Translation of bioinformatics scripts for pipelines in the reproducible Nextflow language
+- Pipeline documentation (Standard Operating Procedure - SOP)
+- Pipeline documentation (Website)
