@@ -42,16 +42,14 @@ export default function Home() {
 
                 <div>
 
-                  <SocialIcon url="https://github.com/biosharp-dotnet" />
-                  <SocialIcon url="https://www.linkedin.com/company/biosharp" />
-                  <SocialIcon url="https://www.youtube.com/channel/UChZX3OqkjS1SuGV_XPLPZ-Q?view_as=subscriber" />
-                  <SocialIcon url="https://www.facebook.com/BioSharp.net/" />
-                  <SocialIcon url="https://twitter.com/BioSharp_dotnet" />
+                  <span class="margin--sm">  <SocialIcon url="https://github.com/biosharp-dotnet" /></span>
+                  <span class="margin--sm"> <SocialIcon url="https://www.linkedin.com/company/biosharp" /> </span>
+                  <span class="margin--sm"> <SocialIcon url="https://www.youtube.com/channel/UChZX3OqkjS1SuGV_XPLPZ-Q?view_as=subscriber" /> </span>
+                  <span class="margin--sm"> <SocialIcon url="https://www.facebook.com/BioSharp.net/" /> </span>
+                  <span class="margin--sm"> <SocialIcon url="https://twitter.com/BioSharp_dotnet" /> </span>
 
                 </div>
-
-              </div>
-              {/* 
+                {/* 
               <div class="card padding--lg padding-left--lg margin-left--lg">
                 <div class="card__body">
                   <h4>Estonian Marketplace profile</h4>
@@ -68,17 +66,17 @@ export default function Home() {
  */}
 
 
-              <div class="col"> </div>
+                <div class="col"> </div>
 
 
-            </div>
+              </div>
 
-            {/* <button class="button button--outline button--primary">
+              {/* <button class="button button--outline button--primary">
               <a href="https://company.e-resident.gov.ee/company/16019987" > Estonian Marketplace </a>
             </button> */}
-
+</div>
+            </div>
           </div>
-        </div>
       </main>
     </Layout>
   );
