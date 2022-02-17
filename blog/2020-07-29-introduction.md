@@ -1,5 +1,5 @@
 ---
-slug: introduction
+slug: introduction-to-biosharp-ou
 title: Hello, world!
 author: Abhinav Sharma
 author_title: An aspiring BioStar.
