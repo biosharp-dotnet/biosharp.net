@@ -7,6 +7,8 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import BioSharpLogoImage from "@site/static/img/biosharp_logo.png";
 import { SocialIcon } from 'react-social-icons';
+import Translate, { translate } from '@docusaurus/Translate';
+
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -17,6 +19,9 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <main>
+
+
+
         <div class="hero shadow--lw">
           <div class="container">
             <div class="row row--no-gutters">
@@ -26,10 +31,14 @@ export default function Home() {
                 {/* <h1 class="hero__title">BioSharp OÜ</h1> */}
                 <img src={BioSharpLogoImage} width={234} height={45} />
                 <p class="hero__subtitle">
-                  We make Bioinformatics simple and easy.
+
+                  <Translate
+                    id="homepage.biosharpTagline"
+                    description="The tagline for BioSharp OÜ">
+                    {'We make Bioinformatics simple and easy.'}
+                  </Translate>
+
                 </p>
-
-
 
                 <div>
 
@@ -42,7 +51,7 @@ export default function Home() {
                 </div>
 
               </div>
-{/* 
+              {/* 
               <div class="card padding--lg padding-left--lg margin-left--lg">
                 <div class="card__body">
                   <h4>Estonian Marketplace profile</h4>

@@ -10,12 +10,12 @@ module.exports = {
   organizationName: "biosharp-dotnet", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
-i18n: {
+  i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt'],
     localeConfigs: {
       en: {
-        htmlLang: 'en-GB',
+        htmlLang: 'en-US',
       },
       pt: {
         htmlLang: 'pt-BR',
@@ -24,6 +24,11 @@ i18n: {
   },
 
   themeConfig: {
+
+    colorMode: {
+      disableSwitch: true
+    },
+
     navbar: {
       title: "Biosharp.net",
       logo: {
@@ -31,12 +36,6 @@ i18n: {
         src: "img/logo-sm.svg",
       },
       items: [
-//         {
-//           to: "docs/",
-//           activeBasePath: "docs",
-//           label: "Docs",
-//           position: "left",
-//         },
 
         {
           type: 'localeDropdown',
@@ -45,22 +44,18 @@ i18n: {
 
         { to: "blog", label: "Blog", position: "left" },
 
-        {
-          href: "https://github.com/biosharp-dotnet/biosharp.net",
-          label: "GitHub",
-          position: "right",
-        },
+
       ],
     },
     footer: {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Content",
           items: [
             {
-              label: "Getting Started",
-              to: "docs/",
+              label: "Blog",
+              to: "blog/",
             },
           ],
         },
@@ -82,12 +77,8 @@ i18n: {
           ],
         },
         {
-          title: "More",
+          title: "Open Source",
           items: [
-            {
-              label: "Blog",
-              to: "blog",
-            },
             {
               label: "GitHub",
               href: "https://github.com/biosharp-dotnet",
@@ -101,7 +92,7 @@ i18n: {
   presets: [
     [
       "@docusaurus/preset-classic",
-       {
+      {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/biosharp-dotnet",

@@ -194,5 +194,9 @@
   "theme.tags.tagsPageTitle": {
     "message": "Marcadores",
     "description": "The title of the tag list page"
+  },
+  "homepage.biosharpTagline": {
+    "message": "Tornamos a Bioinformática simples e fácil.",
+    "description": "The tagline for BioSharp OÜ"
   }
 }
