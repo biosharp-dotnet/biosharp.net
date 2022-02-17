@@ -99,10 +99,29 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/biosharp-dotnet",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
+        pages: {
+          path: 'src/pages',
+          // routeBasePath: '',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          mdxPageComponent: '@theme/MDXPage',
+          remarkPlugins: [],
+          rehypePlugins: [],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
         },
       },
     ],
