@@ -5,7 +5,7 @@ title: Services we offer.
 # Services
 
 ## Training in Bioinformatics
-- Command line launch (Bash/Powershell)
+- Command line basics (Bash/Powershell)
 - Vim text editor
 - VS Code
 - Programming in Bash
