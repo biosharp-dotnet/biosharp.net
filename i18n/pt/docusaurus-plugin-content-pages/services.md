@@ -10,10 +10,11 @@ title: Serviços que oferecemos.
 - VS Code
 - Programação em Bash
 - Programação em Powershell
-- Utilização de Conda
+- Utilização de Conda e Bioconda
+- Utilização de Containers (Docker)
 - Nextflow (conceitos básicos)
 - Nextlow (pipelines públicos)
-- Transferência de dados (rclone)
+- Transferência de dados com segurança (rclone)
 - Git e Github
 
 ## Consultoria em Bioinformática (infraestrutura)
