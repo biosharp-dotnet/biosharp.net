@@ -8,6 +8,8 @@ import styles from "./styles.module.css";
 import BioSharpLogoImage from "@site/static/img/biosharp_logo.png";
 import { SocialIcon } from 'react-social-icons';
 import Translate, { translate } from '@docusaurus/Translate';
+import Flag from 'react-world-flags'
+
 
 
 export default function Home() {
@@ -49,32 +51,19 @@ export default function Home() {
                   <span class="margin--sm"> <SocialIcon url="https://twitter.com/BioSharp_dotnet" /> </span>
 
                 </div>
-                {/* 
-              <div class="card padding--lg padding-left--lg margin-left--lg">
-                <div class="card__body">
-                  <h4>Estonian Marketplace profile</h4>
-                  <small>
-                    BioSharp OÜ is a company registered in Estonia, Europe.
-                  </small>
+                <div />
+                <div />
+                <div />
+
+                <div class="margin-top--sm padding-top--sm">
+                  BioSharp OÜ is a company registered in <a href="https://company.e-resident.gov.ee/company/16019987" > <Flag code={"est"} height="16" width="20" /> Estonia, Europe &hearts;
+                  </a>
                 </div>
-                <div class="card__footer">
-                  <button class="button ">
-                    <a href="https://company.e-resident.gov.ee/company/16019987" > Visit company page </a>
-                  </button>
-                </div>
-              </div>
- */}
-
-
-                {/* <div class="col"> </div> */}
-
 
               </div>
 
-              {/* <button class="button button--outline button--primary">
-              <a href="https://company.e-resident.gov.ee/company/16019987" > Estonian Marketplace </a>
-            </button> */}
             </div>
+
           </div>
         </div>
       </main>
