@@ -22,7 +22,7 @@ export default function Home() {
 
 
 
-        <div class="hero shadow--lw">
+        <div class="hero">
           <div class="container">
             <div class="row row--no-gutters">
               <div class="col"> </div>
@@ -66,7 +66,7 @@ export default function Home() {
  */}
 
 
-                <div class="col"> </div>
+                {/* <div class="col"> </div> */}
 
 
               </div>
@@ -74,9 +74,9 @@ export default function Home() {
               {/* <button class="button button--outline button--primary">
               <a href="https://company.e-resident.gov.ee/company/16019987" > Estonian Marketplace </a>
             </button> */}
-</div>
             </div>
           </div>
+        </div>
       </main>
     </Layout>
   );
