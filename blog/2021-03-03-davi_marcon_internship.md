@@ -8,15 +8,15 @@ author_image_url: https://avatars.githubusercontent.com/u/48180517?v=4
 tags: [Estágio, Nextflow, Pipelines]
 ---
 
-Durante meu período de estágio na Biosharp, fui convidado a adaptar o software [Bactopia](https://bactopia.github.io) para a DSL-2 do [Nextflow](https://nextflow.io).
+Durante meu período de estágio na Biosharp, Uma das minhas atividades principais foi adaptar o software [Bactopia](https://bactopia.github.io) para a DSL-2 do [Nextflow](https://nextflow.io).
 
 <!--truncate-->
 ## Contexto
 
-Logo após iniciar meu estágio na Biosharp, fui abientado ao fluxo de trabalho da empresa, utilizando _workflows_ de desenvolvimento baseados em _git-braches_, quando me familiarizei com as ferramentas utilizadas, fui apresentado ao software [Bactopia](https://bactopia.github.io). 
+Logo após iniciar meu estágio na Biosharp, fui abientado ao fluxo de trabalho da empresa, utilizando _workflows_ de desenvolvimento baseados em _git-braches_, fui familiarizado com as ferramentas utilizadas como conda, Docker, Nextflow e a as plataformas de execução de pipelines em nuvel( Gooogle Life Sciences e AWS). Após essa introdção a metodologia de trabalho da empresa, fui apresentado ao software [Bactopia](https://bactopia.github.io). 
 Este programa é baseado na linguagem Nextflow, e tem como objetivo o processamento automatizado de leituras de origem bacteriana, realizando diversos tipos de análise como a presença de genes de resistência a antibióticos, chamada de variantes, montagem e anotação funcional do genoma. 
 
-Apesar de todas as funcionalidades, o Bactopia estava ainda na versão 1.6.4 e atualização para a DSL2 era uma das metas para o desenvolvimento da versão 2.0.0. **(Explicar o motivo para atualizar o Bactopia para o DSL2).** A partir desta problemática, sob orientação de [Abhinav Sharma](https://github.com/abhi18av), iniciei a trajetória de aplicação da DSL2 ao Bactopia.
+Apesar de todas as funcionalidades, o Bactopia estava ainda na versão 1.6.4 e atualização para a DSL2 era uma das metas para o desenvolvimento da versão 2.0.0. A atualização para DSL2 permitiria ao Bactopia a flexibilização do workflow, com o uso de módulos flexíveis e facilmente modificados no lugar de processos estáticos. O uso desses moodulos permitira que a criação de sub-workflows e o a adição de módulos fosse possível sem interromper o workflow principal, além de tornar o código mais acessível para contribuições. A partir desta problemática, sob orientação de [Abhinav Sharma](https://github.com/abhi18av), iniciei a trajetória de aplicação da DSL2 ao Bactopia.
 
 ## Desenvolvimento
 
@@ -24,12 +24,12 @@ Inicialmente Bactopia continha todos os processos em seu script principal `main.
 
 ### Modularização
 
-Com o objetivo de reduzir o conteúdo do script principal, eu dividi os modulos em pastas e sub-pastas com o seguinte template:
+Com o objetivo de reduzir o conteúdo do script principal e permitir a modificação de modulos sem interromper o fluxo de trabalho no script principal, separando a criação do workflow em hierarquia de `workflow -> sub-workflow -> module` eu dividi os modulos em pastas e sub-pastas com o seguinte template:
 
 ```
 modules/
-├── Conjunto de módulos
-│   └── Process
+├── Quality Control
+│   └── Fastqc
 │       ├── process.nf
 │       ├── bin
 │       ├── nextflow.config
