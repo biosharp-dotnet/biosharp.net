@@ -14,7 +14,7 @@ Durante meu período de estágio na Biosharp, Uma das minhas atividades principa
 ## Contexto
 
 Logo após iniciar meu estágio na Biosharp, fui abientado ao fluxo de trabalho da empresa, utilizando _workflows_ de desenvolvimento baseados em _git-braches_, fui familiarizado com as ferramentas utilizadas como conda, Docker, Nextflow e a as plataformas de execução de pipelines em nuvel( Gooogle Life Sciences e AWS). Após essa introdção a metodologia de trabalho da empresa, fui apresentado ao software [Bactopia](https://bactopia.github.io). 
-Este programa é baseado na linguagem Nextflow, e tem como objetivo o processamento automatizado de leituras de origem bacteriana, realizando diversos tipos de análise como a presença de genes de resistência a antibióticos, chamada de variantes, montagem e anotação funcional do genoma. 
+O Bactopia é baseado na linguagem Nextflow, e tem como objetivo o processamento automatizado de genomas bacterianos (_reads_ em formato _fastq_ a partir da técnica de _Whole Genome Sequencing_ - WGS), realizando diversos tipos de análises: controle de qualidade das reads, montagem contra o genoma de referência (_mapping_), montagem _de novo_, chamada de variantes (SNPs e INDELS), investigação de mutações associadas à resistência aos antimicrobianos, anotação funcional do genoma e análise filogenética. 
 
 Apesar de todas as funcionalidades, o Bactopia estava ainda na versão 1.6.4 e atualização para a DSL2 era uma das metas para o desenvolvimento da versão 2.0.0. A atualização para DSL2 permitiria ao Bactopia a flexibilização do workflow, com o uso de módulos flexíveis e facilmente modificados no lugar de processos estáticos. O uso desses moodulos permitira que a criação de sub-workflows e o a adição de módulos fosse possível sem interromper o workflow principal, além de tornar o código mais acessível para contribuições. A partir desta problemática, sob orientação de [Abhinav Sharma](https://github.com/abhi18av), iniciei a trajetória de aplicação da DSL2 ao Bactopia.
 
@@ -38,13 +38,13 @@ modules/
 │       ├── test_data
 │       ├── test_params.yaml
 ```
-Onde cada processo foi tornado independente, com a possibilidade de executá-los individualmente com testes e parâmetros próprios, e também com o uso de `stubs` para o teste rápido com arquivos sem conteúdo. [Bioinformatics-lab/bactopia#4](https://github.com/bioinformatics-lab/bactopia/pull/4)
+Nessa nova estrutura tornamos cada processo independente, com a possibilidade de executá-los individualmente com testes e parâmetros próprios, e também com o uso de `stubs` para o teste rápido com arquivos sem conteúdo. [Bioinformatics-lab/bactopia#4](https://github.com/bioinformatics-lab/bactopia/pull/4)
 
-Esses procedimentos permitem o desenvolvimento independente de módulos e o trabalho individualizado para cada processo, o script `main.nf` pode ficar intacto enquanto novos módulos e novas configurações são adicionados.
+Esses procedimentos (combinação de DSL-2 e `stubs`) permitem o desenvolvimento independente de módulos e o trabalho individualizado para cada processo, assim, o script `main.nf` pode ficar intacto enquanto novos módulos e novas configurações são adicionados.
 
 Aproveitando-se desse sistema de testagem individual com nextflow, [Robert Petit](https://github.com/rpetit3) ( O desenvolvedor da ferramenta) implementou um sistema de testagem para cada módulo com a biblioteca pytest da linguagem python.
 
-Além da modularização, cada processo precisou ter suas intruções de entrada e saída adaptados para o novo formato de uso de `Channels` do nextflow, a atualização para esse formato só foi possível graças a testagem individualizada. 
+Além da modularização, cada processo precisou ter suas intruções de entrada e saída adaptados para o novo formato de uso de `Channels` do Nextflow, portanto a atualização para esse formato só foi possível graças a testagem individualizada para cada módulo. 
 
 O trabalho pode ser acompanhado na [Pull request#3](https://github.com/bioinformatics-lab/bactopia/pull/3) feita no galho de desenvolvimento da Biosharp OÜ.
 
