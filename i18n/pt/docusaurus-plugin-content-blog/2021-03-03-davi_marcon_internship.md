@@ -1,6 +1,6 @@
 ---
 slug: davi-marcon-internship
-title: "Projeto de estágio Bactopia Domain Specific Language 2(DSL2)"
+title: "Projetos de estágio"
 author: Davi Marcon
 author_title: Estagiário
 author_url: https://github.com/mxrcon
@@ -8,7 +8,7 @@ author_image_url: https://avatars.githubusercontent.com/u/48180517?v=4
 tags: [Estágio, Nextflow, Pipelines]
 ---
 
-Durante meu período de estágio na Biosharp, Uma das minhas atividades principais foi adaptar o software [Bactopia](https://bactopia.github.io) para a DSL-2 do [Nextflow](https://nextflow.io), além de trabalhar na manutenção de outros softwares da empresa.
+Durante meu período de estágio na Biosharp, Uma das minhas atividades principais foi adaptar o software [Bactopia](https://bactopia.github.io) para a DSL-2 do [Nextflow](https://nextflow.io), além de trabalhar na manutenção de outros pipelines da BioSharp OÜ.
 
 <!--truncate-->
 ## Contexto
@@ -38,6 +38,7 @@ modules/
 │       ├── test_data
 │       ├── test_params.yaml
 ```
+
 Nessa nova estrutura tornamos cada processo independente, com a possibilidade de executá-los individualmente com testes e parâmetros próprios, e também com o uso de `stubs` para o teste rápido com arquivos sem conteúdo (_mock data_). [Bioinformatics-lab/bactopia#4](https://github.com/bioinformatics-lab/bactopia/pull/4)
 
 Esses procedimentos (combinação de DSL-2 e `stubs`) permitem o desenvolvimento independente de módulos e o trabalho individualizado para cada processo, assim, o script `main.nf` pode ficar intacto enquanto novos módulos e novas configurações são adicionados.
@@ -56,14 +57,14 @@ Após o contato de Robert, Abhinav me orientou e auxiliou com o procedimento de 
 
 ## Outras atividades
 
-Além do trabalho no software Bactopia, também realizei trabalhos de atualização de manutenção de código em programas_Open Source_, Esse trabalho foi incentivado como forma de introdução as colaborações abertas utilizando o GitHub.  Os programas em que eu realizei manutenções são: [Dandrea Legionella - Nf](https://github.com/bioinformatics-lab/dandrea_legionella_nf), [MTB mono inh - NF](https://github.com/bioinformatics-lab/mtb_mono_inh_nf), [Rita Bahia Analysis](rita_bahia_analysis_nf) e [LABMICOBACT - UNIFESP - ntm romagnoli](https://github.com/emilyncosta/labmicobact_unifesp_ntm_romagnoli_nf), dentre as principais modificações realizadas estão: Criação de `README` acessível para novos usuários, adição de `profiles` pra execução em AWS, Azure e GCP e usando containers Docker ou pacotes Conda, criação de `stubs` para testes, e criação de `task files` para execução. 
+Além do trabalho no software Bactopia, também realizei trabalhos de atualização de manutenção de código em programas _Open Source_, Esse trabalho foi incentivado como forma de introdução as colaborações abertas utilizando o GitHub.  Os programas em que eu realizei manutenções são: [Dandrea Legionella - Nf](https://github.com/bioinformatics-lab/dandrea_legionella_nf), [MTB mono inh - NF](https://github.com/bioinformatics-lab/mtb_mono_inh_nf), [Rita Bahia Analysis](https://github.com/bioinformatics-lab/rita_bahia_analysis_nf) e [LABMICOBACT - UNIFESP - ntm romagnoli](https://github.com/emilyncosta/labmicobact_unifesp_ntm_romagnoli_nf), dentre as principais modificações realizadas estão: Criação de `README` acessível para novos usuários, adição de `profiles` pra execução em AWS, Azure e GCP e usando containers Docker ou pacotes Conda, criação de `stubs` para testes, e criação de `task files` para execução. 
 
 Como conclusão do estágio na Biopsharp realizei contribuições para a atualização do Bactopia para a versão 2.0, o qual gerou uma produção científica no evento (Sequencing to Function: Analysis and Applications for the Future - [Bactopia v2: Highly scalable, portable and customizable bacterial genome analyses ](https://docs.google.com/presentation/d/e/2PACX-1vRaPMAUR8BjFMVnn3Dk2VRrvrdbf72i2aAz2gXqIbLdSb3AKW3FaHDnxkOvtCKYGMWSeS2BRXrc8kci/pub?start=true&loop=false&delayms=3000#slide=id.gee051c5954_0_27)). Além disso, adquiri diversos conhecimentos, dentre eles: Programação na linguagem Nextflow, Design de fluxo de pipeline científico para análise de genomas, Colaboração baseada em git e github, Computação utilizando infraestrutura em nuvem (AWS e Kubernetes), Gerenciamento de projetos por JIRA e Freedcam, Desenvolvimento de mentalidade engenheira crítica e empática.
 
 
 Davi Marcon
-Acadêmico de Biotecnologia - Universidade Federal do Pará
-E-mail: davijosuemarcon@gmail.com
-ResearchGate: https://www.researchgate.net/profile/Davi-Marcon
-Lattes CV: http://lattes.cnpq.br/1196401125333340
-Orcid: https://orcid.org/0000-0003-1014-422X
+- Acadêmico de Biotecnologia - Universidade Federal do Pará
+- E-mail: davijosuemarcon@gmail.com
+- ResearchGate: https://www.researchgate.net/profile/Davi-Marcon
+- Lattes CV: http://lattes.cnpq.br/1196401125333340
+- Orcid: https://orcid.org/0000-0003-1014-422X

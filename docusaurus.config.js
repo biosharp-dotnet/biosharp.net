@@ -4,7 +4,7 @@ module.exports = {
   tagline: "The tagline of my site",
   url: "https://biosharp.net",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "biosharp-dotnet", // Usually your GitHub org/user name.
