@@ -198,5 +198,17 @@
   "homepage.biosharpTagline": {
     "message": "Tornamos a Bioinformática simples e fácil.",
     "description": "The tagline for BioSharp OÜ"
+  },
+  "homepage.biosharpRegistration1": {
+    "message": "A empresa BioSharp OÜ está ",
+    "description": "Company registration overview-1"
+  },
+  "homepage.biosharpRegistration2": {
+    "message": " cadastrado na ",
+    "description": "Company registration overview-2"
+  },
+  "homepage.biosharpRegistration3": {
+    "message": " Estônia, Europa ",
+    "description": "Company registration overview-3"
   }
 }

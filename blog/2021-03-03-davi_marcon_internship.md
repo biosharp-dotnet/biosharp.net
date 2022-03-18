@@ -12,4 +12,4 @@ During my internship at Biosharp, one of my main activities was to adapt the [Ba
 
 <!--truncate-->
 
-Read the full blog in Portuguese by switching the local from top-right.
+Read the full blog in Portuguese by switching the language from top-right button.

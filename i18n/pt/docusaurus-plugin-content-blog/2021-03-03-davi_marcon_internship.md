@@ -49,7 +49,7 @@ Além da modularização, cada processo precisou ter suas intruções de entrada
 
 O trabalho pode ser acompanhado na [Pull request#3](https://github.com/bioinformatics-lab/bactopia/pull/3) feita no galho de desenvolvimento da Biosharp OÜ.
 
-## Repercussão do desenvolvimento
+### Repercussão do desenvolvimento
 
 O objetivo do desenvolvimento de uma versão DLS2 para o bactopia era me ambientar ao uso de Nextflow para criação de pipelines. Mas durante o processo de modularização e atualização para a DSL mais recente, o desenvolvedor principal da ferramenta notou o trabalho e nos contactou via Github com o desejo de utilizar as mudanças na versão 2.0.
 
@@ -57,9 +57,20 @@ Após o contato de Robert, Abhinav me orientou e auxiliou com o procedimento de 
 
 ## Outras atividades
 
-Além do trabalho no software Bactopia, também realizei trabalhos de atualização de manutenção de código em programas _Open Source_, Esse trabalho foi incentivado como forma de introdução as colaborações abertas utilizando o GitHub.  Os programas em que eu realizei manutenções são: [Dandrea Legionella - Nf](https://github.com/bioinformatics-lab/dandrea_legionella_nf), [MTB mono inh - NF](https://github.com/bioinformatics-lab/mtb_mono_inh_nf), [Rita Bahia Analysis](https://github.com/bioinformatics-lab/rita_bahia_analysis_nf) e [LABMICOBACT - UNIFESP - ntm romagnoli](https://github.com/emilyncosta/labmicobact_unifesp_ntm_romagnoli_nf), dentre as principais modificações realizadas estão: Criação de `README` acessível para novos usuários, adição de `profiles` pra execução em AWS, Azure e GCP e usando containers Docker ou pacotes Conda, criação de `stubs` para testes, e criação de `task files` para execução. 
+Além do trabalho no software Bactopia, também realizei trabalhos de atualização de manutenção de código em programas _Open Source_, Esse trabalho foi incentivado como forma de introdução as colaborações abertas utilizando o GitHub.  Os programas em que eu realizei manutenções são: [Legionella], [MTB mono inh], [Bahia Analysis] e [NTM] dentre as principais modificações realizadas estão: 
 
-Como conclusão do estágio na Biopsharp realizei contribuições para a atualização do Bactopia para a versão 2.0, o qual gerou uma produção científica no evento (Sequencing to Function: Analysis and Applications for the Future - [Bactopia v2: Highly scalable, portable and customizable bacterial genome analyses ](https://docs.google.com/presentation/d/e/2PACX-1vRaPMAUR8BjFMVnn3Dk2VRrvrdbf72i2aAz2gXqIbLdSb3AKW3FaHDnxkOvtCKYGMWSeS2BRXrc8kci/pub?start=true&loop=false&delayms=3000#slide=id.gee051c5954_0_27)). Além disso, adquiri diversos conhecimentos, dentre eles: Programação na linguagem Nextflow, Design de fluxo de pipeline científico para análise de genomas, Colaboração baseada em git e github, Computação utilizando infraestrutura em nuvem (AWS e Kubernetes), Gerenciamento de projetos por JIRA e Freedcam, Desenvolvimento de mentalidade engenheira crítica e empática.
+- Criação de `README` acessível para novos usuários
+- Adição de `profiles` pra execução em AWS, Azure e GCP e usando containers Docker ou pacotes Conda
+- Criação de `stubs` para testes
+- Criação de `task files` para execução. 
+
+Como conclusão do estágio na Biopsharp OÜ realizei contribuições para a atualização do Bactopia para a versão 2.0, o qual gerou uma produção científica no evento (Sequencing to Function: Analysis and Applications for the Future - [Bactopia v2: Highly scalable, portable and customizable bacterial genome analysis ](https://docs.google.com/presentation/d/e/2PACX-1vRaPMAUR8BjFMVnn3Dk2VRrvrdbf72i2aAz2gXqIbLdSb3AKW3FaHDnxkOvtCKYGMWSeS2BRXrc8kci/pub?start=true&loop=false&delayms=3000#slide=id.gee051c5954_0_27)). Além disso, adquiri diversos conhecimentos, dentre eles: 
+- Programação na linguagem Nextflow
+- Design de fluxo de pipeline científico para análise de genomas
+- Colaboração baseada em git e github
+- Computação utilizando infraestrutura em nuvem (AWS, GCP e Kubernetes)
+- Gerenciamento de projetos por JIRA e Freedcam
+- Desenvolvimento de mentalidade engenheira crítica e empática
 
 
 Davi Marcon

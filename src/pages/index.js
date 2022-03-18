@@ -56,8 +56,36 @@ export default function Home() {
                 <div />
 
                 <div class="margin-top--sm padding-top--sm">
-                  BioSharp OÜ is a company registered in <a href="https://company.e-resident.gov.ee/company/16019987" > <Flag code={"est"} height="16" width="20" /> Estonia, Europe &hearts;
+
+
+
+                  <Translate
+                    id="homepage.biosharpRegistration1"
+                    description="Company registration overview-1">
+                    {'BioSharp OÜ is a company'}
+                  </Translate>
+
+                  <a href="https://company.e-resident.gov.ee/company/16019987" >
+
+                    <Translate
+                      id="homepage.biosharpRegistration2"
+                      description="Company registration overview-2">
+                      {' registered in '}
+                    </Translate>
+
+
+                    <Translate
+                      id="homepage.biosharpRegistration3"
+                      description="Company registration overview-3">
+                      {' Estonia, Europe '}
+                    </Translate>
+
+                    <Flag code={"est"} height="16" width="20" />
+                    {' '}
+                    &hearts;
+
                   </a>
+
                 </div>
 
               </div>
