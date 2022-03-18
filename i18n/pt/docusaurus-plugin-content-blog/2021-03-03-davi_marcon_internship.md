@@ -75,7 +75,6 @@ Como conclusão do estágio na Biopsharp OÜ realizei contribuições para a atu
 
 Davi Marcon
 - Acadêmico de Biotecnologia - Universidade Federal do Pará
-- E-mail: davijosuemarcon@gmail.com
 - ResearchGate: https://www.researchgate.net/profile/Davi-Marcon
 - Lattes CV: http://lattes.cnpq.br/1196401125333340
 - Orcid: https://orcid.org/0000-0003-1014-422X
