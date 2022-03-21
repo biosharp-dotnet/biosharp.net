@@ -8,12 +8,19 @@ author_image_url: https://avatars.githubusercontent.com/u/48180517?v=4
 tags: [Estágio, Nextflow, Pipelines]
 ---
 
-Durante meu período de estágio na Biosharp, Uma das minhas atividades principais foi adaptar o software [Bactopia](https://bactopia.github.io) para a DSL-2 do [Nextflow](https://nextflow.io), além de trabalhar na manutenção de outros pipelines da BioSharp OÜ.
+## Introdução
+
+Equanto acadêmico de Biotecnologia na Universidade Federal do Pará (UFPa) ([ResearchGate](https://www.researchgate.net/profile/Davi-Marcon), [Lattes CV](http://lattes.cnpq.br/1196401125333340)
+, [Orcid](https://orcid.org/0000-0003-1014-422X)) realizei estágio voluntário na empresa Biosharp OÜ no primeiro semestre de 2021, o qual irei relatar resumidamente as principais atividades desenvolvidas neste período. Dentre estas, a principal foi adaptar o software [Bactopia](https://bactopia.github.io) para a DSL-2 do [Nextflow](https://nextflow.io), além de trabalhar na manutenção de outros pipelines da BioSharp OÜ.
+
 
 <!--truncate-->
-## Contexto
+
+
+## Contexto de Estágio
 
 Logo após iniciar meu estágio na Biosharp, fui abientado ao fluxo de trabalho da empresa, utilizando _workflows_ de desenvolvimento baseados em _git-braches_, fui familiarizado com as ferramentas utilizadas como conda, Docker, Nextflow e a as plataformas de execução de pipelines em nuvem( Gooogle Life Sciences e AWS) através da plataforma [Nextflow Tower](https://tower.nf/). Após essa introdção a metodologia de trabalho da empresa, fui apresentado ao software [Bactopia](https://bactopia.github.io). 
+
 O Bactopia é baseado na linguagem Nextflow, e tem como objetivo o processamento automatizado de genomas bacterianos (_reads_ em formato _fastq_ a partir da técnica de _Whole Genome Sequencing_ - WGS), realizando diversos tipos de análises: controle de qualidade das reads, montagem contra o genoma de referência (_mapping_), montagem _de novo_, chamada de variantes (SNPs e INDELS), investigação de mutações associadas à resistência aos antimicrobianos, anotação funcional do genoma e análise filogenética. 
 
 Apesar de todas as funcionalidades, o Bactopia estava ainda na versão 1.6.4 e atualização para a DSL-2 era uma das metas para o desenvolvimento da versão 2.0.0. A atualização para DSL-2 permitiria ao Bactopia a flexibilização do workflow, com o uso de módulos flexíveis e facilmente modificados no lugar de processos estáticos. O uso desses moodulos permitira que a criação de sub-workflows e o a adição de módulos fosse possível sem interromper o workflow principal, além de tornar o código mais acessível para contribuições. A partir desta problemática, sob orientação de [Abhinav Sharma](https://github.com/abhi18av), iniciei a trajetória de aplicação da DSL2 ao Bactopia.
@@ -57,24 +64,25 @@ Após o contato de Robert, Abhinav me orientou e auxiliou com o procedimento de 
 
 ## Outras atividades
 
-Além do trabalho no software Bactopia, também realizei trabalhos de atualização de manutenção de código em programas _Open Source_, Esse trabalho foi incentivado como forma de introdução as colaborações abertas utilizando o GitHub.  Os programas em que eu realizei manutenções são: [Legionella], [MTB mono inh], [Bahia Analysis] e [NTM] dentre as principais modificações realizadas estão: 
+Além do trabalho no software Bactopia, também participei na atualização de manutenção de código em pipelines _Open Source_. Esse trabalho foi incentivado como forma de introdução as colaborações abertas utilizando o GitHub, dentre os quais acompanhei análises de genoma dos organismos _Legionella sp._; _Mycobacterium tuberculosis_ (MTB) mono-resistente a droga isoniazida (INH);  MTB multidrogra-ressistente (MDR) e extensivamente resistente (XDR), bem como identificação de novas espécies de Micobactérias Nao Tuberculosas (MNT). Quanto a estes pipelines, as principais modificações realizadas foram: 
 
-- Criação de `README` acessível para novos usuários
-- Adição de `profiles` pra execução em AWS, Azure e GCP e usando containers Docker ou pacotes Conda
-- Criação de `stubs` para testes
+- Criação de `README` acessível para usuários.
+- Adição de `profiles` pra execução em AWS, Azure e GCP e usando containers Docker ou pacotes Conda.
+- Criação de `stubs` para testes.
 - Criação de `task files` para execução. 
 
-Como conclusão do estágio na Biopsharp OÜ realizei contribuições para a atualização do Bactopia para a versão 2.0, o qual gerou uma produção científica no evento (Sequencing to Function: Analysis and Applications for the Future - [Bactopia v2: Highly scalable, portable and customizable bacterial genome analysis ](https://docs.google.com/presentation/d/e/2PACX-1vRaPMAUR8BjFMVnn3Dk2VRrvrdbf72i2aAz2gXqIbLdSb3AKW3FaHDnxkOvtCKYGMWSeS2BRXrc8kci/pub?start=true&loop=false&delayms=3000#slide=id.gee051c5954_0_27)). Além disso, adquiri diversos conhecimentos, dentre eles: 
-- Programação na linguagem Nextflow
-- Design de fluxo de pipeline científico para análise de genomas
-- Colaboração baseada em git e github
-- Computação utilizando infraestrutura em nuvem (AWS, GCP e Kubernetes)
-- Gerenciamento de projetos por JIRA e Freedcam
-- Desenvolvimento de mentalidade engenheira crítica e empática
+## Conclusão
+
+Como conclusão do estágio na Biopsharp OÜ realizei contribuições para a atualização do Bactopia para a versão 2.0, o qual gerou uma produção científica no evento (Sequencing to Function: Analysis and Applications for the Future - [Bactopia v2: Highly scalable, portable and customizable bacterial genome analysis ](https://docs.google.com/presentation/d/e/2PACX-1vRaPMAUR8BjFMVnn3Dk2VRrvrdbf72i2aAz2gXqIbLdSb3AKW3FaHDnxkOvtCKYGMWSeS2BRXrc8kci/pub?start=true&loop=false&delayms=3000#slide=id.gee051c5954_0_27)).
+
+Além disso, adquiri diversos conhecimentos, dentre eles:
+
+- Programação na linguagem Nextflow.
+- Desenvolvimento de mentalidade engenheira crítica e empática.
+- Design de fluxo de pipeline científico para análise de genomas.
+- Colaboração baseada em Git e Github.
+- Computação utilizando infraestrutura em nuvem (AWS, GCP e Kubernetes).
+- Gerenciamento de projetos por JIRA e Freedcamp.
 
 
-Davi Marcon
-- Acadêmico de Biotecnologia - Universidade Federal do Pará
-- ResearchGate: https://www.researchgate.net/profile/Davi-Marcon
-- Lattes CV: http://lattes.cnpq.br/1196401125333340
-- Orcid: https://orcid.org/0000-0003-1014-422X
+Este estágio foi de grande valor para a curriculo acâdemico, pois ampliou minhas habilidades nesta área, me apresentou novas colaborações e me motivou a obter continua atualização e novos conhecimentos em programação e Bioínformatica.
