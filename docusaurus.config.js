@@ -37,18 +37,14 @@ module.exports = {
       },
       items: [
 
-
-        { to: "services", label: "Services", position: "left" },
-
-
         { to: "blog", label: "Blog", position: "left" },
 
+        { to: "services", label: "Services", position: "left" },
 
         {
           type: 'localeDropdown',
           position: 'right',
         },
-
 
 
       ],
