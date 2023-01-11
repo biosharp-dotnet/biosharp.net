@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "biosharp.net",
-  tagline: "The tagline of my site",
+  tagline: "Making bioinformatics simple and easy.",
   url: "https://biosharp.net",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/biosharp.ico",
   organizationName: "biosharp-dotnet", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "biosharp.net", // Usually your repo name.
 
   i18n: {
     defaultLocale: 'en',

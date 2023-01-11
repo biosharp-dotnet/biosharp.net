@@ -1,14 +1,14 @@
 {
   "title": {
     "message": "Blog",
-    "description": "The title for the blog used in SEO"
+    "description": "Blog for BioSharp OÜ"
   },
   "description": {
     "message": "Blog",
-    "description": "The description for the blog used in SEO"
+    "description": "Blog for BioSharp OÜ"
   },
   "sidebar.title": {
-    "message": "Recent posts",
+    "message": "Posts",
     "description": "The label for the left sidebar"
   }
 }
