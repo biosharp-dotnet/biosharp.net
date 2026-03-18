@@ -40,7 +40,11 @@ module.exports = {
       title: "Biosharp.net",
       logo: {
         alt: "BioSharp OÜ logo",
-        src: "img/logo-sm.svg",
+        // Using the PNG instead of the SVG — the SVG has explicit 1380×1380
+        // dimensions and a filled background rect that cause mobile browsers
+        // to fail to render it correctly.
+        src: "img/logo-sm.png",
+        style: { height: "32px", width: "auto" },
       },
       items: [
 

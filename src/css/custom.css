@@ -25,6 +25,14 @@
   --ifm-navbar-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* ── Navbar logo ── */
+.navbar__logo {
+  height: 32px !important;
+  width: auto !important;
+  max-width: 160px;
+  object-fit: contain;
+}
+
 /* ── Navbar title & logo ── */
 .navbar__title {
   color: #ffffff;
