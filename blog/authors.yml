@@ -1,0 +1,27 @@
+# ──────────────────────────────────────────────────────────────────
+# BioSharp Blog — Author definitions
+#
+# Usage in a blog post's frontmatter:
+#
+#   Single author:
+#     authors: abhinav
+#
+#   Multiple authors:
+#     authors: [abhinav, davi]
+#
+# You can also inline authors directly in frontmatter without this
+# file by using the `authors` array with full objects.
+# ──────────────────────────────────────────────────────────────────
+
+abhinav:
+  name: Abhinav Sharma
+  title: CEO & Lead Bioinformatician
+  url: https://github.com/abhi18av
+  image_url: https://avatars1.githubusercontent.com/u/12799326?s=460&v=4
+  email: abhinav@biosharp.net
+
+davi:
+  name: Davi Marcon
+  title: Bioinformatics Intern
+  url: https://github.com/mxrcon
+  image_url: https://avatars.githubusercontent.com/u/48180517?v=4

@@ -1,25 +1,32 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/types').Config} */
 module.exports = {
   title: "biosharp.net",
   tagline: "Making bioinformatics simple and easy.",
   url: "https://biosharp.net",
   baseUrl: "/",
   onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/biosharp.ico",
   organizationName: "biosharp-dotnet", // Usually your GitHub org/user name.
   projectName: "biosharp.net", // Usually your repo name.
 
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
+
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt'],
+    locales: ['en'],
     localeConfigs: {
       en: {
         htmlLang: 'en-US',
       },
-      pt: {
-        htmlLang: 'pt-BR',
-      },
+      // Portuguese locale — kept for reference, re-enable by adding 'pt' back to
+      // the locales array above and uncommenting the block below.
+      // pt: {
+      //   htmlLang: 'pt-BR',
+      // },
     },
   },
 
@@ -41,10 +48,13 @@ module.exports = {
 
         { to: "services", label: "Services", position: "left" },
 
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        { to: "contact", label: "Contact", position: "left" },
+
+        // Locale dropdown — re-enable when Portuguese locale is reactivated.
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
 
 
       ],
@@ -58,6 +68,14 @@ module.exports = {
             {
               label: "Blog",
               to: "blog/",
+            },
+            {
+              label: "Services",
+              to: "services/",
+            },
+            {
+              label: "Contact",
+              to: "contact/",
             },
           ],
         },
@@ -87,6 +105,15 @@ module.exports = {
             },
           ],
         },
+        {
+          title: "Partners",
+          items: [
+            {
+              label: "incsteps.com",
+              href: "https://incsteps.com",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()}. All rights reserved, BioSharp OÜ`,
     },
@@ -101,6 +128,9 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
+          // Shared authors map – allows multiple authors per post.
+          // In frontmatter use: authors: [author1, author2]
+          authorsMapPath: 'authors.yml',
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

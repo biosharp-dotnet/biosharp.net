@@ -1,25 +1,98 @@
 /* stylelint-disable docusaurus/copyright-header */
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global CSS overrides for BioSharp OÜ
+ * Uses Infima CSS framework (Docusaurus default)
  */
 
-/* You can override the default Infima variables here. */
+/* ── Primary palette (teal / brand green) ── */
 :root {
   --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary-dark: #1da888;
+  --ifm-color-primary-darker: #1a9e80;
+  --ifm-color-primary-darkest: #167d65;
+  --ifm-color-primary-light: #42ccad;
+  --ifm-color-primary-lighter: #5dd3ba;
+  --ifm-color-primary-lightest: #85dece;
+
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-weight: 700;
+
+  /* Navbar: dark to match the hero */
+  --ifm-navbar-background-color: #0d1b2a;
+  --ifm-navbar-link-color: #c9d8e5;
+  --ifm-navbar-link-hover-color: #25c2a0;
+  --ifm-navbar-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* ── Navbar title & logo ── */
+.navbar__title {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.navbar__brand:hover .navbar__title {
+  color: #25c2a0;
+}
+
+/* ── Navbar items ── */
+.navbar__item .navbar__link {
+  color: #c9d8e5;
+  font-weight: 500;
+}
+
+.navbar__item .navbar__link:hover,
+.navbar__item .navbar__link--active {
+  color: #25c2a0;
+}
+
+/* ── Locale dropdown ── */
+.navbar__link[aria-haspopup="listbox"] {
+  color: #c9d8e5;
+}
+
+/* ── Footer ── */
+.footer {
+  background: #0a151f;
+}
+
+.footer__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer__link-item {
+  color: #7a99b3;
+}
+
+.footer__link-item:hover {
+  color: #25c2a0;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  color: #4a6475;
+  font-size: 0.8rem;
+}
+
+/* ── Blog / docs readability ── */
+article h1, article h2, article h3 {
+  color: #0d1b2a;
+}
+
+/* ── Code highlight ── */
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+/* ── Smooth scrolling ── */
+html {
+  scroll-behavior: smooth;
 }
