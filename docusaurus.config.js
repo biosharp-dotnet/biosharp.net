@@ -135,6 +135,11 @@ module.exports = {
           // Shared authors map – allows multiple authors per post.
           // In frontmatter use: authors: [author1, author2]
           authorsMapPath: 'authors.yml',
+          // Pagination: number of posts per page
+          postsPerPage: 5,
+          // Disable the built-in left sidebar — our custom BlogListPage
+          // swizzle adds a right sidebar with tags + stats instead.
+          blogSidebarCount: 0,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
