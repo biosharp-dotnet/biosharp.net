@@ -7,8 +7,146 @@ tags: [Internship, Nextflow, Pipelines, English]
 
 ## Introduction
 
-During my internship at Biosharp, one of my main activities was to adapt the [Bactopia](https://bactopia.github.io) software to the [Nextflow](https://nextflow.io) DSL-2, in addition to working on the maintenance of other pipelines from BioSharp OÜ.
+As a Biotechnology student at the Federal University of Pará (UFPa)
+([ResearchGate](https://www.researchgate.net/profile/Davi-Marcon),
+[Lattes CV](http://lattes.cnpq.br/1196401125333340),
+[Orcid](https://orcid.org/0000-0003-1014-422X)),
+I completed a voluntary internship at BioSharp OÜ during the first
+half of 2021. In this post I summarise the main activities I carried
+out during that period. The most significant was adapting the
+[Bactopia](https://bactopia.github.io) software to
+[Nextflow](https://nextflow.io) DSL-2, alongside maintenance work on
+other BioSharp OÜ pipelines.
 
 <!--truncate-->
 
-Read the full blog post in <a href="/pt/blog/davi-marcon-internship" target="_blank" rel="noopener noreferrer"> Portuguese</a>
+<div style={{"textAlign": "justify"}}>
+
+## Internship Context
+
+Shortly after joining BioSharp I was introduced to the company's
+workflow: a git-branch-based development process with tools such as
+Conda, Docker, and Nextflow, and cloud pipeline execution platforms
+(Google Life Sciences and AWS) via
+[Nextflow Tower](https://tower.nf/). Once familiar with the working
+methodology, I was introduced to
+[Bactopia](https://bactopia.github.io).
+
+Bactopia is a Nextflow-based tool for the automated processing of
+bacterial genomes (fastq reads from Whole Genome Sequencing — WGS). It
+performs a broad range of analyses: read quality control, reference
+mapping, de novo assembly, variant calling (SNPs and INDELs),
+antimicrobial-resistance mutation profiling, functional genome
+annotation, and phylogenetic analysis.
+
+Despite all its features, Bactopia was still at version 1.6.4 and
+upgrading to DSL-2 was one of the targets for the upcoming 2.0.0
+release. The DSL-2 migration would give Bactopia a more flexible
+workflow structure — replacing static processes with modular,
+easily-modified components — allowing sub-workflows and new modules to
+be added without disrupting the main workflow, and making the codebase
+more accessible to contributors. Under the guidance of
+[Abhinav Sharma](https://github.com/abhi18av), I began applying DSL-2
+to Bactopia.
+
+## Development
+
+### Modularisation
+
+Bactopia originally held all of its processes in a single `main.nf`
+script. With DSL-2 the number of lines in that script could be
+drastically reduced by splitting processes into importable modules. To
+keep the main script lean and allow individual modules to be modified
+without breaking the overall workflow, I adopted a
+`workflow → sub-workflow → module` hierarchy and organised the modules
+into the following folder structure:
+
+```
+modules/
+├── Quality Control
+│   └── Fastqc
+│       ├── process.nf
+│       ├── bin
+│       ├── nextflow.config
+│       ├── README.md
+│       ├── templates
+│       ├── test_data
+│       ├── test_params.yaml
+```
+
+In this new structure every process became independent — each one
+executable on its own with dedicated tests, parameters, and `stub`
+blocks for fast mock-data testing.
+[bioinformatics-lab/bactopia#4](https://github.com/bioinformatics-lab/bactopia/pull/4)
+
+This combination of DSL-2 and stubs enables independent module
+development, meaning `main.nf` can remain untouched while new modules
+and configurations are added. Taking advantage of this per-module
+testing setup, the tool's author
+[Robert Petit](https://github.com/rpetit3) later implemented a
+pytest-based test suite for each module.
+
+Beyond modularisation, every process also had its input/output
+declarations updated to the new Nextflow `Channel` format — something
+that was only feasible thanks to the isolated per-module testing.
+
+The full work can be followed in
+[Pull request #3](https://github.com/bioinformatics-lab/bactopia/pull/3)
+on BioSharp OÜ's development fork.
+
+### Impact of the Work
+
+The goal of building a DSL-2 version of Bactopia was primarily to
+familiarise myself with Nextflow pipeline development. However, during
+the modularisation process, the tool's lead developer noticed the work
+and reached out via GitHub expressing interest in incorporating the
+changes into version 2.0.
+
+After Robert's message, Abhinav guided me through a git rebase to
+align the work with the upstream codebase. Following Robert's
+adjustments, the changes were merged into Bactopia's main branch and
+eventually became part of the 2.0 release. The full history of those
+changes can be seen in
+[Bactopia#228](https://github.com/bactopia/bactopia/pull/228).
+
+## Other Activities
+
+Alongside the Bactopia work, I also contributed to maintenance and
+code updates in several open-source pipelines — an activity encouraged
+as an introduction to open collaboration on GitHub. These pipelines
+covered analyses of *Legionella* sp.; isoniazid (INH)
+mono-resistant *Mycobacterium tuberculosis* (MTB); multidrug-resistant
+(MDR) and extensively drug-resistant (XDR) MTB; and identification of
+novel Non-Tuberculous Mycobacteria (NTM) species. Key contributions
+included:
+
+- Writing user-friendly `README` files
+- Adding execution `profiles` for AWS, Azure, and GCP, supporting both
+  Docker containers and Conda packages
+- Creating `stub` blocks for fast pipeline testing
+- Writing `task files` for job execution
+
+## Conclusion
+
+My internship at BioSharp OÜ resulted in contributions to the
+Bactopia 2.0 release, which led to a scientific presentation at the
+conference *Sequencing to Function: Analysis and Applications for the
+Future*:
+[Bactopia v2: Highly scalable, portable and customizable bacterial genome analysis](https://docs.google.com/presentation/d/e/2PACX-1vRaPMAUR8BjFMVnn3Dk2VRrvrdbf72i2aAz2gXqIbLdSb3AKW3FaHDnxkOvtCKYGMWSeS2BRXrc8kci/pub?start=true&loop=false&delayms=3000#slide=id.gee051c5954_0_27).
+
+Beyond the technical output, I gained skills that have directly shaped
+my academic and professional development:
+
+- Programming in Nextflow
+- Critical and empathetic engineering mindset
+- Scientific pipeline design for genome analysis
+- Git and GitHub-based collaboration
+- Cloud computing (AWS, GCP, Kubernetes)
+- Project management with JIRA and Freedcamp
+
+This internship was enormously valuable — it broadened my
+bioinformatics skills, introduced me to new collaborations, and
+motivated me to keep learning at the intersection of programming and
+life sciences.
+
+</div>
