@@ -4,7 +4,6 @@ import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { SocialIcon } from "react-social-icons";
 // import Translate from "@docusaurus/Translate"; // re-enable with Portuguese locale
-import Flag from "react-world-flags";
 import styles from "./styles.module.css";
 
 // Inline DNA Helix SVG decoration
@@ -106,21 +105,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <p className={styles.registration}>
-              BioSharp OÜ is a company{" "}
-              <a
-                href="https://company.e-resident.gov.ee/company/16019987"
-                className={styles.registrationLink}
-              >
-                registered in Estonia, Europe{" "}
-                <Flag code="est" height="14" width="18" />
-                {" "}<span className={styles.heart}>♥</span>
-              </a>
-              {/* Translate wrappers preserved below — re-enable with Portuguese locale:
-              <Translate id="homepage.biosharpRegistration1">{"BioSharp OÜ is a company"}</Translate>
-              <Translate id="homepage.biosharpRegistration2">{"registered in Estonia, Europe"}</Translate>
-              */}
-            </p>
+
           </div>
         </section>
 

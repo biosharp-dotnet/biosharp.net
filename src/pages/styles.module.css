@@ -120,26 +120,6 @@
   align-items: center;
 }
 
-/* Estonia registration text */
-.registration {
-  font-size: 0.85rem;
-  color: #7a99b3;
-  margin: 0;
-}
-
-.registrationLink {
-  color: #25c2a0 !important;
-  text-decoration: none;
-}
-
-.registrationLink:hover {
-  text-decoration: underline;
-}
-
-.heart {
-  color: #e05f5f;
-}
-
 /* ─────────────────────────────────────────────
    WHAT WE DO  (light)
 ───────────────────────────────────────────── */
