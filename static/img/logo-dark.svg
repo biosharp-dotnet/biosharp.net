@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60" role="img" aria-label="BioSharp logo (dark variant)">
+  <!-- DNA Helix icon (white strands) -->
+  <g transform="translate(4, 4)">
+    <path d="M8,0 C20,13 8,26 20,39 C8,46 14,52 20,52" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M20,0 C8,13 20,26 8,39 C20,46 14,52 8,52" fill="none" stroke="#25c2a0" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <line x1="9" y1="13" x2="19" y2="13" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="19" y1="26" x2="9" y2="26" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="9" y1="39" x2="19" y2="39" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="8"  cy="0"  r="2.5" fill="#ffffff"/>
+    <circle cx="20" cy="0"  r="2.5" fill="#25c2a0"/>
+    <circle cx="20" cy="13" r="2.5" fill="#ffffff"/>
+    <circle cx="8"  cy="13" r="2.5" fill="#25c2a0"/>
+    <circle cx="8"  cy="26" r="2.5" fill="#ffffff"/>
+    <circle cx="20" cy="26" r="2.5" fill="#25c2a0"/>
+    <circle cx="20" cy="39" r="2.5" fill="#ffffff"/>
+    <circle cx="8"  cy="39" r="2.5" fill="#25c2a0"/>
+    <circle cx="8"  cy="52" r="2.5" fill="#ffffff"/>
+    <circle cx="20" cy="52" r="2.5" fill="#25c2a0"/>
+  </g>
+  <!-- White wordmark -->
+  <text x="38" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Bio</text>
+  <text x="92" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#25c2a0" letter-spacing="-0.5">Sharp</text>
+</svg>

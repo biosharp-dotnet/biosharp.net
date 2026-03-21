@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="52" height="52" role="img" aria-label="BioSharp icon">
+  <!-- Rounded square background -->
+  <rect width="52" height="52" rx="10" fill="#25c2a0"/>
+  <!-- Monogram "BS" -->
+  <text x="8" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff" letter-spacing="-1">BS</text>
+  <!-- Small teal accent dot -->
+  <circle cx="42" cy="12" r="4" fill="#4e9af1" opacity="0.85"/>
+</svg>
