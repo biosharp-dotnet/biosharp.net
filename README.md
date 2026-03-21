@@ -1,6 +1,6 @@
 # BioSharp.net — Website
 
-The official website for [BioSharp](https://biosharp.net), built with [Docusaurus 2](https://docusaurus.io/).
+The official website for [BioSharp](https://biosharp.net), built with [Docusaurus](https://docusaurus.io/) v3 (`^3.9.2`).
 
 BioSharp makes bioinformatics **simple and easy** — offering training, infrastructure consulting, and pipeline development for modern research labs.
 
@@ -10,8 +10,10 @@ BioSharp makes bioinformatics **simple and easy** — offering training, infrast
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) ≥ 16
-- [Yarn](https://yarnpkg.com/) (recommended) or npm
+- [Node.js](https://nodejs.org/) ≥ 20 (see `engines` field in `package.json`)
+- [Yarn](https://yarnpkg.com/) (recommended) or npm ≥ 10
+
+> **Note:** Docusaurus v4 has not been released yet. This project tracks the latest stable v3 release (`^3.9.2`). Upgrade to v4 once it is officially published.
 
 ### Installation
 
